@@ -145,3 +145,86 @@ footer {
 		}
 	}
 }
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Adjust navigation for smaller screens */
+    .main-nav nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .main-nav nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .main-nav .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack intro section elements vertically */
+    .intro .units-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro img {
+        margin-bottom: 20px;
+    }
+
+    .intro h1 span {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Reduce padding for mobile view */
+    .section {
+        padding: 20px 10px;
+    }
+
+    /* Adjust section headings */
+    .section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust work and award lists */
+    .work-list li,
+    .award-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Footer adjustments */
+    footer .units-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .social li {
+        margin: 10px 0;
+    }
+}
+
+/* General Flexbox Styling */
+.intro .units-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .units-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
