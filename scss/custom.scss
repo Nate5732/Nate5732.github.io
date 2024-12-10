@@ -228,3 +228,27 @@ footer .units-row {
     align-items: center;
     flex-wrap: wrap;
 }
+.intro h1:before {
+    position: absolute;
+    left: -220px;
+    top: -150px;
+    font-size: 270px; /* Default for larger screens */
+    z-index: -1;
+    color: lighten($secondary, 65%);
+}
+
+@media (max-width: 768px) {
+    .intro h1:before {
+        left: -50px; /* Adjust for smaller screens */
+        top: -80px; /* Adjust position for smaller screens */
+        font-size: 120px; /* Reduce font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1:before {
+        left: -20px; /* Further adjust for very small screens */
+        top: -50px;
+        font-size: 90px; /* Reduce font size even more */
+    }
+}
