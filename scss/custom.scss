@@ -59,19 +59,14 @@
 	}
 
 	h1 {
-		position: relative; // Ensure h1 is the containing block
-	
 		&:before {
 			position: absolute;
-			top: 50%; // Center vertically
-			left: 50%; // Center horizontally
-			transform: translate(-50%, -50%); // Adjust for the size of the element
+			left: -220px;
+			top: -150px;
 			font-size: 270px;
 			z-index: -1;
 			color: lighten($secondary, 65%);
-			text-align: center; // Ensure text is centered
 		}
-	
 		span {
 			font-size: 47px;
 		}
@@ -149,14 +144,4 @@ footer {
 			}
 		}
 	}
-}
-
-
-
-@media (max-width: 768px) {
-    h1:before {
-        left: -100px; /* Adjust the left position */
-        top: -75px; /* Adjust the top position */
-        font-size: 120px; /* Reduce the font size */
-    }
 }
