@@ -61,7 +61,7 @@
 	h1 {
 		&:before {
 			position: absolute;
-			left: -220px;
+			left: -200px;
 			top: -150px;
 			font-size: 270px;
 			z-index: -1;
@@ -147,3 +147,11 @@ footer {
 }
 
 
+
+@media (max-width: 768px) {
+    h1:before {
+        left: -100px; /* Adjust the left position */
+        top: -75px; /* Adjust the top position */
+        font-size: 120px; /* Reduce the font size */
+    }
+}
