@@ -59,14 +59,19 @@
 	}
 
 	h1 {
+		position: relative; // Ensure h1 is the containing block
+	
 		&:before {
 			position: absolute;
-			left: -200px;
-			top: -150px;
-			font-size: 200px;
+			top: 50%; // Center vertically
+			left: 50%; // Center horizontally
+			transform: translate(-50%, -50%); // Adjust for the size of the element
+			font-size: 270px;
 			z-index: -1;
 			color: lighten($secondary, 65%);
+			text-align: center; // Ensure text is centered
 		}
+	
 		span {
 			font-size: 47px;
 		}
