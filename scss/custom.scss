@@ -146,28 +146,7 @@ footer {
 	}
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    /* Adjust navigation for smaller screens */
-    .main-nav nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .main-nav nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .main-nav .logo {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-}
-
 @media (max-width: 768px) {
-    /* Stack intro section elements vertically */
     .intro .units-row {
         flex-direction: column;
         align-items: center;
@@ -175,80 +154,27 @@ footer {
     }
 
     .intro img {
+        width: 100px; /* Adjust the size of the profile image */
+        height: 100px;
         margin-bottom: 20px;
     }
 
-    .intro h1 span {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 600px) {
-    /* Reduce padding for mobile view */
-    .section {
-        padding: 20px 10px;
-    }
-
-    /* Adjust section headings */
-    .section h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    /* Adjust work and award lists */
-    .work-list li,
-    .award-list li {
-        font-size: 14px;
+    .intro h1 {
+        font-size: 24px; /* Reduce the size of the heading */
         margin-bottom: 10px;
     }
 
-    /* Footer adjustments */
-    footer .units-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .intro h1 span {
+        font-size: 20px; /* Adjust the span size */
     }
 
-    footer .social li {
-        margin: 10px 0;
+    .intro p {
+        font-size: 14px; /* Ensure paragraph text is legible */
+        margin: 10px 20px; /* Add padding to avoid text touching screen edges */
     }
-}
 
-/* General Flexbox Styling */
-.intro .units-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-footer .units-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.intro h1:before {
-    position: absolute;
-    left: -220px;
-    top: -150px;
-    font-size: 270px; /* Default for larger screens */
-    z-index: -1;
-    color: lighten($secondary, 65%);
-}
-
-@media (max-width: 768px) {
-    .intro h1:before {
-        left: -50px; /* Adjust for smaller screens */
-        top: -80px; /* Adjust position for smaller screens */
-        font-size: 120px; /* Reduce font size for mobile */
+    .intro {
+        padding: 20px 10px; /* Reduce overall padding for the intro section */
     }
 }
 
-@media (max-width: 480px) {
-    .intro h1:before {
-        left: -20px; /* Further adjust for very small screens */
-        top: -50px;
-        font-size: 90px; /* Reduce font size even more */
-    }
-}
