@@ -72,7 +72,23 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center !important;
         padding: 20px 0 !important;
     }
+
+    .phone-link {
+        display: inline-block !important;
+        color: blue; /* Change the text color to blue */
+      }
+
+    .phone-text {
+       display: none !important; /* Hide the non-clickable text on mobile */
+    }
+    .phone-link:hover {
+        color: darkblue; /* Optional: Change the color when the link is hovered */
+      }
 }
+
+.phone-link {
+    display: none;
+  }
 
   
   .typed-cursor {
