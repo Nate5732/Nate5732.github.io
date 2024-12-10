@@ -47,9 +47,6 @@ ul.work-list li {
     a, p, li {
         font-size: 0.9em !important;
     }
-    ul.work-list {
-      padding-left: 20px !important; /* Ensure bullets align correctly on smaller screens */
-  }
   
   ul.work-list li {
       font-size: 0.9rem !important; /* Adjust font size for mobile */
@@ -169,6 +166,7 @@ ul.work-list li {
     position: absolute;
     content: url(../img/separator.png);
     left: 20px;
+    bottom: -40px;
   }
   
   .section .container h1 {
