@@ -146,35 +146,4 @@ footer {
 	}
 }
 
-@media (max-width: 768px) {
-    .intro .units-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .intro img {
-        width: 100px; /* Adjust the size of the profile image */
-        height: 100px;
-        margin-bottom: 20px;
-    }
-
-    .intro h1 {
-        font-size: 24px; /* Reduce the size of the heading */
-        margin-bottom: 10px;
-    }
-
-    .intro h1 span {
-        font-size: 20px; /* Adjust the span size */
-    }
-
-    .intro p {
-        font-size: 14px; /* Ensure paragraph text is legible */
-        margin: 10px 20px; /* Add padding to avoid text touching screen edges */
-    }
-
-    .intro {
-        padding: 20px 10px; /* Reduce overall padding for the intro section */
-    }
-}
 
